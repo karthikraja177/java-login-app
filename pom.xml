@@ -17,6 +17,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.organization>karthik177</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
@@ -67,5 +69,22 @@
 			</plugin>
 		</plugins>
 	</build>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0pnjkaw5eefu-artifactory-primary-0-releases</name>
+        <url>https://karthik177.jfrog.io/artifactory/li-maven-libs-release-local</url>
+    </repository>
+</distributionManagement>
+	<!--repository>
+  <id>java-app</id>
+  <url>https://pkgs.dev.azure.com/karthiknatarajan5429/de088f5d-34d3-4348-a673-fd7ab596ce20/_packaging/java-app/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository-->
 </project>
+
